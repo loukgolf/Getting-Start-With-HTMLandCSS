@@ -293,6 +293,81 @@ SVG                 Scalable Vector Graphics                    .svg
         <li>Tea</li>
         <li>Milk</li>
     </ol>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink 0</dd>
+        <dd>- black hot drink 1</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink 0</dd>
+        <dd>- white cold drink 1</dd>
+    </dl>
+    <h2>Unordered HTML List</h2>
+    <table>
+        <tr>
+            <th style="border: 1px solid black; padding: 15px;">Value</th>
+            <th style="border: 1px solid black; padding: 15px;">Description</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">disc</td>
+            <td style="border: 1px solid black;">Sets the list item marker to a bullet (default)</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">circle</td>
+            <td style="border: 1px solid black;">Sets the list item marker to a circle</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">square</td>
+            <td style="border: 1px solid black;">Sets the list item marker to a square</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black;">none</td>
+            <td style="border: 1px solid black;">The list items will not be marked</td>
+        </tr>
+    </table>
+    <ul style="list-style-type:disc;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <ul style="list-style-type:circle;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <ul style="list-style-type:square;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <ul style="list-style-type:none;">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+    <p>style="list-style-type:none;"</p>
+
+    <h2>A Nested List</h2>
+    <p>Lists can be nested (list inside list):</p>
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+    <p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
+    <ul style="list-style-type:none; margin: 0; padding: 0; overflow: hidden; background-color: #333333;">
+        <li style="float:left; padding:16px; text-align:center; border: 1px solid black; width:100px; color:aliceblue;">Coffee</li>
+        <li style="float:left; padding:16px; text-align:center; border: 1px solid black; width:100px; color:aliceblue;">Tea</li>
+        <li style="float:left; padding:16px; text-align:center; border: 1px solid black; width:100px; color:aliceblue;">Milk</li>
+    </ul>
+    <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_menu" target="_blank" style="font-size:160%; color:indigo;">For more information</a>
+
+
 </body>
 
 </html>
