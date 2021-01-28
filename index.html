@@ -2,6 +2,8 @@
 <html>
 
 <head>
+    X-Frame-Options: DENY
+    X-Frame-Options: SAMEORIGIN
     <title>Title</title>
 </head>
 
@@ -361,12 +363,139 @@ SVG                 Scalable Vector Graphics                    .svg
     </ul>
     <p>In this example, we use CSS to style the list horizontally, to create a navigation menu:</p>
     <ul style="list-style-type:none; margin: 0; padding: 0; overflow: hidden; background-color: #333333;">
-        <li style="float:left; padding:16px; text-align:center; border: 1px solid black; width:100px; color:aliceblue;">Coffee</li>
-        <li style="float:left; padding:16px; text-align:center; border: 1px solid black; width:100px; color:aliceblue;">Tea</li>
-        <li style="float:left; padding:16px; text-align:center; border: 1px solid black; width:100px; color:aliceblue;">Milk</li>
+        <li style="float:left; padding:16px; text-align:center; border: 1px solid black; width:100px; color:aliceblue;">
+            Coffee</li>
+        <li style="float:left; padding:16px; text-align:center; border: 1px solid black; width:100px; color:aliceblue;">
+            Tea</li>
+        <li style="float:left; padding:16px; text-align:center; border: 1px solid black; width:100px; color:aliceblue;">
+            Milk</li>
     </ul>
-    <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_menu" target="_blank" style="font-size:160%; color:indigo;">For more information</a>
+    <a href="https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_menu" target="_blank"
+        style="font-size:160%; color:indigo;">For more information</a>
+    <h2>Ordered HTML List</h2>
+    <table style="border: 1px solid black; padding: 0px; margin: 0;">
+        <tr>
+            <th style="border: 1px solid black; padding: 15px; margin: 0;">Type</th>
+            <th style="border: 1px solid black; padding: 15px; margin: 0;">Description</th>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 15px; margin: 0;">type="1"</td>
+            <td style="border: 1px solid black; padding: 15px; margin: 0;">The list items will be numbered with numbers
+                (default)</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 15px; margin: 0;">type="A"</td>
+            <td style="border: 1px solid black; padding: 15px; margin: 0;">The list items will be numbered with
+                uppercase letters</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 15px; margin: 0;">type="a"</td>
+            <td style="border: 1px solid black; padding: 15px; margin: 0;">The list items will be numbered with
+                lowercase letters</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 15px; margin: 0;">type="I"</td>
+            <td style="border: 1px solid black; padding: 15px; margin: 0;">The list items will be numbered with
+                uppercase roman numbers</td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid black; padding: 15px; margin: 0;">type="i"</td>
+            <td style="border: 1px solid black; padding: 15px; margin: 0;">The list items will be numbered with
+                lowercase roman numbers</td>
+        </tr>
+    </table>
+    <ol type="1">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="A">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="I">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="i">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <br>
+    <ol start="50">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol start="-50">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <ol type="I" start="10">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ol>
+    <hr>
+    <h1 id=htmlLinks
+        style="font-family:courier; text-align:center; color:chocolate; font-size:300%; background-color:aquamarine">
+        HTML Block and Inline Elements</h1>
+    <a href="https://www.w3schools.com/html/html_blocks.asp" target="_blank" style="font-size:160%; color:indigo;">HTML
+        Block and Inline Elements</a>
+    <ul>
+        <div style="border: 1px solid black">Hello World</div>
 
+        <p>The DIV element is a block element, and will always start on a new line and take up the full width available
+            (stretches out to the left and right as far as it can).</p>
+
+        <p>Here are the block-level elements in HTML:</p>
+        <div class="w3-row htmlHigh w3-code" style="line-height:25px;border-left:none;">
+            <div>&ltaddress&gt</div>
+            <div>&ltarticle&gt</div>
+            <div>&ltaside&gt</div>
+            <div>&ltblockquote&gt</div>
+            <div>&ltcanvas&gt</div>
+            <div>&ltdiv&gt</div>
+            <div>&ltfieldset&gt</div>
+            <div>&ltfigcption&gt</div>
+            <div>&ltfigure&gt</div>
+            <div>&ltfooter&gt</div>
+            <div>&ltform&gt</div>
+            <div>&ltmain&gt</div>
+            <a href="https://www.w3schools.com/html/html_blocks.asp" target="_blank">for more</a>
+        </div>
+        <h2>The &lt;div&gt; Element</h2>
+        <p>The <code style="color:blue;">&lt;div&gt;</code> element is
+            often used as a container for other HTML elements.</p>
+        <p>The <code style="color:blue;">&lt;div&gt;</code> element has no required attributes, but
+            <code style="color:blue;">style</code>, <code style="color:blue;">class</code> and <code
+                style="color:blue;">id</code> are common.
+        </p>
+        <p>When used together with CSS, the <code style="color:blue;">&lt;div&gt;</code> element can be used to style
+            blocks of
+            content:</p>
+        <hr>
+        <div>
+            <iframe title="Inline Frame Example" width="300" height="200"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+            </iframe>
+
+        </div>
+        <iframe style="border:none; display:block;" width="100%" height="700px" src="http://time-time.net/timer/digital-clock.php" scrolling="no">
+        </iframe>
+        <p align="center">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/ePoQO3U5eU0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+        <hr>
 
 </body>
 
